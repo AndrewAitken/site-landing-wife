@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 
 interface ProgressBarProps {
   totalStories: number;
+  onActiveStoryChange?: (activeStory: number) => void;
 }
 
 interface ProgressSegmentProps {
@@ -27,7 +28,7 @@ function ProgressSegment({ isActive, onClick }: ProgressSegmentProps) {
   );
 }
 
-export function ProgressBar({ totalStories }: ProgressBarProps) {
+export function ProgressBar({ totalStories, onActiveStoryChange }: ProgressBarProps) {
   const [activeStory, setActiveStory] = useState(0);
 
   const scrollToStory = (index: number) => {
@@ -51,7 +52,9 @@ export function ProgressBar({ totalStories }: ProgressBarProps) {
           const storyId = entry.target.id;
           const storyIndex = parseInt(storyId.split('-')[1], 10);
           if (!isNaN(storyIndex)) {
+            console.log('ProgressBar: Detected story change to:', storyIndex);
             setActiveStory(storyIndex);
+            onActiveStoryChange?.(storyIndex);
           }
         }
       });
@@ -67,10 +70,23 @@ export function ProgressBar({ totalStories }: ProgressBarProps) {
       }
     }
 
+    // Начальная проверка первого слайда 
+    setTimeout(() => {
+      const firstStory = document.getElementById('story-0');
+      if (firstStory) {
+        const rect = firstStory.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight * 0.5) {
+          console.log('ProgressBar: Initial story-0 detected');
+          setActiveStory(0);
+          onActiveStoryChange?.(0);
+        }
+      }
+    }, 100);
+
     return () => {
       observer.disconnect();
     };
-  }, [totalStories]);
+  }, [totalStories, onActiveStoryChange]);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">

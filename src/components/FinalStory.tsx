@@ -13,10 +13,10 @@ export function FinalStory() {
           <div className="content-stretch flex flex-col gap-[32px] items-center relative shrink-0 w-full">
             {/* Main Content */}
             <div className="content-stretch flex flex-col gap-[23.995px] items-center relative shrink-0 w-full">
-              <p className="font-['Montserrat:Medium',_sans-serif] font-medium leading-[24px] relative shrink-0 text-[18px] text-center text-nowrap text-white tracking-[-0.3125px] whitespace-pre">С Днём Рождения!</p>
+              <p className="font-medium leading-[24px] relative shrink-0 text-[18px] text-center text-nowrap text-white tracking-[-0.3125px] whitespace-pre">С Днём Рождения!</p>
               
-              <div className="content-stretch flex flex-col font-['Montserrat:Regular',_sans-serif] font-normal gap-[15.994px] items-start leading-[24px] relative shrink-0 text-[15px] text-center tracking-[-0.3125px] w-full">
-                <p className="relative shrink-0 text-[#d1d5dc] w-full">30 лет — это не просто цифра. Это история о том, как девушка, которую я встретил в 20, стала удивительной женщиной, матерью и моей опорой.</p>
+              <div className="content-stretch flex flex-col font-normal gap-[15.994px] items-start leading-[24px] relative shrink-0 text-[15px] text-center tracking-[-0.3125px] w-full">
+                <p className="relative shrink-0 text-[#d1d5dc] w-full">30 лет — это не просто цифра. Это история о том, как девушка, которую я встретил в 20 лет, стала удивительной женщиной, матерью и моей опорой.</p>
                 <p className="relative shrink-0 text-[#d1d5dc] w-full">Спасибо за эти 10 лет вместе. За любовь, за смех, за слезы, за рост. За то, что ты рядом каждый день.</p>
                 <p className="relative shrink-0 text-white w-full">Я люблю тебя больше, чем вчера, и меньше, чем завтра.</p>
               </div>
@@ -24,10 +24,10 @@ export function FinalStory() {
               <div className="content-stretch flex flex-col gap-[12px] items-center relative shrink-0 w-full">
                 <div className="bg-[rgba(255,255,255,0.3)] h-[0.999px] shrink-0 w-[127.992px]" />
                 <div className="h-[15.994px] relative shrink-0 w-[297.112px]">
-                  <p className="absolute font-['Montserrat:Regular',_sans-serif] font-normal leading-[16px] left-[149.35px] text-[#99a1af] text-[12px] text-center text-nowrap top-[0.52px] translate-x-[-50%] whitespace-pre">С любовью, твой муж</p>
+                  <p className="absolute font-normal leading-[16px] left-[149.35px] text-[#99a1af] text-[12px] text-center text-nowrap top-[0.52px] translate-x-[-50%] whitespace-pre">С любовью, твой муж</p>
                 </div>
                 <div className="h-[15.994px] relative shrink-0 w-[297.112px]">
-                  <p className="absolute font-['Montserrat:Regular',_sans-serif] font-normal leading-[16px] left-[149.06px] text-[#6a7282] text-[12px] text-center text-nowrap top-[0.52px] translate-x-[-50%] whitespace-pre">15 октября 2025</p>
+                  <p className="absolute font-normal leading-[16px] left-[149.06px] text-[#6a7282] text-[12px] text-center text-nowrap top-[0.52px] translate-x-[-50%] whitespace-pre">17 октября 2025</p>
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@ export function FinalStory() {
             <div className="relative shrink-0 w-full">
               <div className="flex flex-col items-center justify-center size-full">
                 <div className="box-border content-stretch flex flex-col gap-[8px] items-center justify-center px-[130px] py-0 relative w-full">
-                  <p className="font-['Montserrat:Regular',_sans-serif] font-normal leading-[16px] relative shrink-0 text-[14.4px] text-center text-nowrap text-white tracking-[0.1477px] whitespace-pre">❤️</p>
+                  <p className="font-normal leading-[16px] relative shrink-0 text-[14.4px] text-center text-nowrap text-white tracking-[0.1477px] whitespace-pre">❤️</p>
                 </div>
               </div>
             </div>

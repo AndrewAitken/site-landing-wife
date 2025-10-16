@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ProgressBar } from './components/ProgressBar';
 import { StoryContainer } from './components/StoryContainer';
 import { IntroStory } from './components/IntroStory';
@@ -9,6 +10,7 @@ import { YouLoveStory } from './components/YouLoveStory';
 import { PhotoGalleryStory } from './components/PhotoGalleryStory';
 import { FinalStory } from './components/FinalStory';
 import { Confetti } from './components/Confetti';
+import { BackgroundManager } from './components/BackgroundManager';
 
 import imgContainer1 from "figma:asset/6a8dad9bd6fd8f077ea3c033aefbd4a2c82bc0f6.png";
 import imgContainer2 from "figma:asset/cd8343917a5a979b1bcde06c13bf38e2d14132d9.png";
@@ -17,15 +19,30 @@ import imgContainer4 from "figma:asset/3a6339be2ffdfc56dde71ece83feaa77e405fcb4.
 
 export default function App() {
   const totalStories = 10;
+  const [activeStory, setActiveStory] = useState(1);
+
+  const handleActiveStoryChange = (storyIndex: number) => {
+    console.log('App: Story changed to:', storyIndex);
+    setActiveStory(storyIndex);
+  };
 
   return (
-    <div className="bg-white relative min-h-screen">
+    <div className="relative min-h-screen">
+      {/* Background Manager */}
+      <BackgroundManager activeStory={activeStory} />
+      
       {/* Confetti Animation */}
-      <Confetti />
+      <div className="relative z-20">
+        <Confetti />
+      </div>
       
-      <ProgressBar totalStories={totalStories} />
-      
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+      <div className="relative z-10">
+        <ProgressBar 
+          totalStories={totalStories} 
+          onActiveStoryChange={handleActiveStoryChange}
+        />
+        
+        <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
         {/* Intro */}
         <StoryContainer id="story-0">
           <IntroStory />
@@ -103,6 +120,7 @@ export default function App() {
         <StoryContainer id="story-9">
           <FinalStory />
         </StoryContainer>
+        </div>
       </div>
     </div>
   );

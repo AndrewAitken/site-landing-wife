@@ -32,7 +32,7 @@ export function PhotoGalleryStory() {
       <div className="max-w-inherit overflow-clip rounded-[inherit] size-full">
         <div className="box-border content-stretch flex flex-col gap-[8px] items-start max-w-inherit p-[24px] relative w-full">
           <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-            <p className="font-['Montserrat:Medium',_sans-serif] font-medium leading-[24px] relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.4492px] whitespace-pre">Кусочки истории</p>
+            <p className="font-medium leading-[24px] relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.4492px] whitespace-pre">Кусочки истории</p>
             
             {/* Photo Grid */}
             <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
@@ -53,7 +53,7 @@ export function PhotoGalleryStory() {
           </div>
           
           <div className="box-border content-stretch flex flex-col items-start pb-0 pt-[12px] px-0 relative shrink-0 w-full">
-            <p className="font-['Montserrat:Italic',_sans-serif] font-normal italic leading-[16px] relative shrink-0 text-[#6a7282] text-[12px] w-full">Все, что было за это время, не уместить так просто.</p>
+            <p className="font-normal italic leading-[16px] relative shrink-0 text-[#6a7282] text-[12px] w-full">Все, что было за это время, не уместить так просто.</p>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ export function GratitudeStory() {
             {/* Header */}
             <div className="h-[29.998px] relative shrink-0 w-full">
               <div className="absolute h-[29.998px] left-0 top-0 w-[297.112px]">
-                <p className="absolute font-['Montserrat:Medium',_sans-serif] font-medium leading-[30px] left-0 text-[20px] text-black text-nowrap top-[0.14px] tracking-[-0.4492px] whitespace-pre">Спасибо тебе</p>
+                <p className="absolute font-medium leading-[30px] left-0 text-[20px] text-black text-nowrap top-[0.14px] tracking-[-0.4492px] whitespace-pre">Спасибо тебе</p>
               </div>
             </div>
 
@@ -36,10 +36,10 @@ export function GratitudeStory() {
                 <div key={index} className="content-stretch flex gap-[15.994px] items-start relative shrink-0 w-full">
                   <div className="relative shrink-0">
                     <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border content-stretch flex items-start relative">
-                      <p className="font-['Montserrat:Regular',_sans-serif] font-normal leading-[28.8px] relative shrink-0 text-[24px] text-neutral-950 text-nowrap tracking-[0.3164px] whitespace-pre">{item.emoji}</p>
+                      <p className="font-normal leading-[28.8px] relative shrink-0 text-[24px] text-neutral-950 text-nowrap tracking-[0.3164px] whitespace-pre">{item.emoji}</p>
                     </div>
                   </div>
-                  <p className="basis-0 font-['Montserrat:Regular',_sans-serif] font-normal grow leading-[20px] min-h-px min-w-px relative shrink-0 text-[#364153] text-[14px] tracking-[-0.1504px]">{item.text}</p>
+                  <p className="basis-0 font-normal grow leading-[20px] min-h-px min-w-px relative shrink-0 text-[#364153] text-[14px] tracking-[-0.1504px]">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -47,7 +47,7 @@ export function GratitudeStory() {
             {/* Footer */}
             <div className="box-border content-stretch flex flex-col items-start pb-0 pt-[12px] px-0 relative shrink-0 w-full">
               <div aria-hidden="true" className="absolute border-[0.524px_0px_0px] border-gray-200 border-solid inset-0 pointer-events-none" />
-              <p className="font-['Montserrat:Italic',_sans-serif] font-normal italic leading-[16px] relative shrink-0 text-[#6a7282] text-[12px] w-full">Ты изменилась так сильно за эти годы — стала мудрее, сильнее, увереннее. И я горжусь каждым твоим шагом на этом пути.</p>
+              <p className="font-normal italic leading-[16px] relative shrink-0 text-[#6a7282] text-[12px] w-full">Ты изменилась так сильно за эти годы — стала мудрее, сильнее, увереннее. И я горжусь каждым твоим шагом на этом пути.</p>
             </div>
           </div>
         </div>

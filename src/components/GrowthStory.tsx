@@ -67,14 +67,14 @@ const qualities = [
 
 export function GrowthStory() {
   return (
-    <div className="relative rounded-[24px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] shrink-0 w-full">
+    <div className="bg-white relative rounded-[24px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] shrink-0 w-full">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="box-border content-stretch flex flex-col items-start p-[24px] relative w-full">
           <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             {/* Header */}
             <div className="content-stretch flex flex-col gap-[17px] items-start relative shrink-0 w-full">
-              <p className="font-['Montserrat:Medium',_sans-serif] font-medium leading-[24px] relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.4492px] whitespace-pre">Твой путь роста</p>
-              <p className="font-['Montserrat:Regular',_sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#4a5565] text-[14px] tracking-[-0.1504px] w-[min-content]">За эти годы ты проделала невероятную работу над собой. Я видел каждое твое усилие, каждый шаг к лучшей версии себя.</p>
+              <p className="font-medium leading-[24px] relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.4492px] whitespace-pre">Твой путь</p>
+              <p className="font-normal leading-[20px] min-w-full relative shrink-0 text-[#4a5565] text-[14px] tracking-[-0.1504px] w-[min-content]">За эти годы ты проделала невероятную работу над собой. Я видел каждое твое усилие, каждый шаг к лучшей версии себя.</p>
             </div>
 
             {/* Quality Cards */}
@@ -88,8 +88,8 @@ export function GrowthStory() {
                       <div className="box-border content-stretch flex flex-col gap-[12px] items-start p-[12px] relative w-full">
                         <IconComponent />
                         <div className="content-stretch flex flex-col gap-[3.996px] items-start relative shrink-0 text-nowrap w-full whitespace-pre">
-                          <p className="font-['Montserrat:Medium',_sans-serif] font-medium leading-[20px] relative shrink-0 text-[14px] text-black tracking-[-0.1504px]">{quality.label}</p>
-                          <p className="font-['Montserrat:Regular',_sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#6a7282] text-[12px]">{quality.description}</p>
+                          <p className="font-medium leading-[20px] relative shrink-0 text-[14px] text-black tracking-[-0.1504px]">{quality.label}</p>
+                          <p className="font-normal leading-[19.5px] relative shrink-0 text-[#6a7282] text-[12px]">{quality.description}</p>
                         </div>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ export function GrowthStory() {
             </div>
 
             {/* Footer - removed underline */}
-            <div className="box-border content-stretch flex flex-col font-['Montserrat:Regular',_sans-serif] font-normal gap-[4px] items-start leading-[20px] px-0 py-[12px] relative shrink-0 text-[14px] text-center text-nowrap tracking-[-0.1504px] w-full whitespace-pre">
+            <div className="box-border content-stretch flex flex-col font-normal gap-[4px] items-start leading-[20px] px-0 py-[12px] relative shrink-0 text-[14px] text-center text-nowrap tracking-[-0.1504px] w-full whitespace-pre">
               <p className="relative shrink-0 text-[#364153]">Я горжусь тобой и тем, кем ты стала.</p>
               <p className="relative shrink-0 text-black">Ты — мое вдохновение.</p>
             </div>
